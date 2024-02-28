@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <script src="js/script.js"></script>
+        <script src="/js/script.js"></script>
         <div class="border">
             <h1>FORMS</h1>
             <form>
@@ -30,13 +30,12 @@
                         <input placeholder="Last name" class="txtflds" type="text" name="lname" id="lname">
                     </div>
                     <br>
-                    <div>
-                        <label class="" for="sex1">Sex</label>
+                    <div id="sex">
+                        <label for="sex1">Sex</label>
                         <br>
-                        <input type="radio" name="sex" id="sex1">Male
-                        <label for="sex2">
-                            <input type="radio" name="sex" id="sex2">Female
-                        </label>
+                        <input type="radio" name="sex" id="sex1" value="Male">Male
+                        <label for="sex2"></label>
+                            <input type="radio" name="sex" id="sex2" value="Female">Female
                     </div>
                     <br>
                     <div>
@@ -53,21 +52,21 @@
                     <div>
                         <label for="section">
                             Section
-                            <select name="section" id="section">
-                                <option>A</option>
-                                <option>B</option>
-                                <option>C</option>
-                                <option>D</option>
-                                <option>E</option>
-                                <option>F</option>
-                                <option>G</option>
-                                <option>H</option>
+                            <select name="section" id="section" value="section">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                                <option value="G">G</option>
+                                <option value="H">H</option>
                             </select>
                         </label>
                     </div>
                     <br>
                     <div>
-                        <input class="submit" type="submit" name="submit" id="submit">
+                        <input class="submit" onclick="getInfo()" type="button" name="submit" id="submit" value="Submit">
                     </div>
                 </div>
             </form>
